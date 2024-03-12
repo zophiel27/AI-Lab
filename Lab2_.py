@@ -4,11 +4,7 @@ Question 5.1
 
 # Check if a given element in a list is divisible by 3 or not
 def checkDivisibility(ls):
-  output = []
-  for x in ls:
-    if(x%3==False):
-      output.append(x)
-  return output
+  return [x for x in ls if x % 3 == 0]
 
 #main
 ls= [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
